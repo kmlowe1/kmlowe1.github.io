@@ -1,4 +1,4 @@
-var changeFactor = 1;
+var changeFactor = 10;
 
 function increaseFontSize(id, increaseFactor){
      txt = document.getElementById(id);
