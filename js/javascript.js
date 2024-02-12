@@ -1,8 +1,8 @@
 var changeFactor = 1;
 
 function increaseFontSize(id, increaseFactor){
-     txt = document.getElementById(id);
-     style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
+     txt = document.getElementById('body');
+     style = window.getComputedStyle('body', null).getPropertyValue('font-size');
      currentSize = parseFloat(style);
      txt.style.fontSize = (currentSize + changeFactor) + 'px';
 }
