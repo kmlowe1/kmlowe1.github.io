@@ -1,6 +1,6 @@
 var changeFactor = 1;
 
-function increaseFontSize(id, increaseFactor){
+function increaseFontSize('body', increaseFactor){
      txt = document.getElementById('body');
      style = window.getComputedStyle('body', null).getPropertyValue('font-size');
      currentSize = parseFloat(style);
