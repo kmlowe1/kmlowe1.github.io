@@ -1,4 +1,4 @@
-var changeFactor = 1;  /**Constant for increase/decrease font size factor**/
+var changeFactor = 1;  /** Constant for increase/decrease font size factor **/
 
 /** This function increases the font size of the text in the HTML Element **/
 function increaseFontSize(id) {
