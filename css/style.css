@@ -1,21 +1,27 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.root {
+    --background_color: #332D41;
+    --font_color: #E6E0E9;
+    --font_size: 3em;
 }
 
 #para {
-  background-color: #332D41;
-  color: #E6E0E9;
-  font-size: 2rem;
-  padding: 1em;
-  margin: 0;
+    background-color: var(--background_color);
+    color: var(--font_color);
+    font-size: var(--font_size);
+    padding: 1em;
+    margin: 0;
 }
 
 #header {
-  text-align: center;
-  position: fixed;
-  top: 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
 }
 
 #listWrapper {
-  padding: 1em;
+    padding: 1em;
 }
