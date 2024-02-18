@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-.root {
+:root {
     --background_color: #332D41;
     --font_color: #E6E0E9;
     --font_size: 3em;
