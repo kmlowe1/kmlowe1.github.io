@@ -9,25 +9,24 @@ body {
 }
 :root {
   --bar-width: 60px;
-  --bar-height: 8px;
-  --hamburger-gap: 6px;
+  --bar-height: 10px;
+  --hamburger-gap: 10px;
   --foreground: #333;
   --background: white;
-  --hamburgerMenuMarginTop: 8px;
-  --hamburgerMenuMarginRight: 8px;
-  --animationTiming: 200ms ease-in-out;
-  --hamburger-height: 60px * 3 + 6px;
+  --hamburger-margin: 10px;
+  --animation-timing: 200ms ease-in-out;
+  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
 }
 
 .hamburger-menu {
+  --x-width: clac(var(--hamburger-height) * 1.41421356237); 
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  /* --x-width: clac (60px * 3 + 6px) * sqrt(2); */
+  gap: var(--hamburger-gap);
   width: max-content;
   position: absolute;
-  top: 8px;
-  left: 8px;
+  top: var(--hamburger-margin);
+  left: var(--hamburger-margin);
   z-index: 2;
   cursor: pointer;
 
@@ -37,14 +36,14 @@ body {
 .hamburger-menu::after,
 .hamburger-menu input {
   content: "";
-  width: 60px;
-  height: 8px;
-  background-color: #333;
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: var(--foreground);
   border-radius: 9999px;
   transform-origin: left center;
-  transition: opacity 200ms ease-in-out, width 200ms ease-in-out, 
-    rotate 200ms ease-in-out, translate 200ms ease-in-out, 
-    background-color 200ms ease-in-out;
+  transition: opacity var(--animation-timing), 
+  width var(--animation-timing), rotate var(--animation-timing), 
+  translate var(--animation-timing), background-color var(--animation-timing);
 }
 
  .hamburger-menu input {
@@ -57,17 +56,17 @@ body {
 
  .hamburger-menu:has(input:checked)::before {
   rotate: 45deg;
-  width: clac (60px * 3 + 6px) * sqrt(2);
-  translate: 0 calc(6px / -2);
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / -2);
 } 
 
 .hamburger-menu:has(input:checked)::after {
-   rotate: -45deg;
-  width: clac (60px * 3 + 6px) * sqrt(2);
-  translate: 0 calc(6px / 2);
+  rotate: -45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / 2);
 }
 
-.hamburger-menu input:checked {
+/* .hamburger-menu input:checked {
   opacity: 0;
   width: 0;
-}
+} */
