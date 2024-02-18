@@ -18,3 +18,6 @@ function decreaseFontSize(id) {
      txt.style.fontSize = (currentSize - changeFactor) + 'em';
 }
 
+import { Collapse, initMDB } from "mdb-ui-kit";
+
+initMDB({ Collapse });

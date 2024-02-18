@@ -5,7 +5,7 @@
 :root {
     --background_color: #332D41;
     --font_color: #E6E0E9;
-    --font_size: 3em;
+    --font_size: 1em;
 }
 
 #para {
@@ -18,8 +18,9 @@
 
 #header {
     text-align: center;
-    position: fixed;
+    display: block;
     top: 0;
+    padding: inherit;
 }
 
 #listWrapper {
