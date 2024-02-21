@@ -1,8 +1,10 @@
-* {
+/* * {
     box-sizing: border-box;
-}
+} */
 
 :root {
+
+    
     --background_color: #332D41;
     --font_color: #E6E0E9;
     --font_size: 1em;
@@ -11,18 +13,18 @@
 #para {
     background-color: var(--background_color);
     color: var(--font_color);
-    font-size: var(--font_size);
-    padding: 1em;
-    margin: 0;
+/*    font-size: var(--font_size);
+     padding: 1em;
+    margin: 0; */
 }
 
-#header {
+/* #header {
     text-align: center;
     display: block;
     top: 0;
     padding: inherit;
-}
+} */
 
-#listWrapper {
+/* #listWrapper {
     padding: 1em;
-}
+} */
