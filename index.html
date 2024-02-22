@@ -1,8 +1,25 @@
+<!--This is "The Wandering Wannabees Lyrics Vault" homepage/landing page.  This application uses the following:
+  - HTML 5
+  - Bootstrap 5
+  - Javascript
+  This page is authored by Kevin Lowe and all images and information contained within the webpage is the 
+  interllectual property of "The Wandering Wannabees", "Facebook", and YouTube.
+  Main purpose of this site is to provide lyrics to accompany the cover band "The Wandering Wannabees" performances 
+  for crowd participation.  Any questions or comments on this code should be addressed to Kevin Lowe at kmlowe1@gmail.com.
+  This page is developed to be used on smartphones, tablets, and full sized computer screens and is currently set for 
+  dark mode by default.
+  Additional releases are planned but not scheduled and will possible contain language options and additonal screen modes.
+  This is currently release 1.0.-->
+
 <!DOCTYPE html>
 <html lang="en">
-
+<!--Meta data, links, page title and X_Icon.-->
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Popular English and Icelandic song lyrics.">
+  <meta name="author" content="Kevin Lowe">
+  <meta name="keywords"
+    content="The Wandering Wannabees, Lyric Vault, song lyrics, conver band, keflavik, iceland, music">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -12,21 +29,20 @@
   <script src="js/javascript.js"></script>
   <title>The Wandering Wannabees Lyrics Vault - Home</title>
   <link rel="icon" type="image/x-icon" href="/graphics/X_Icon.png">
-
 </head>
-
+<!--Banner container, banner image tag, Navigation container wrapper, button grid and navigation buttons.-->
 <body id="para">
   <div class="container-lg my-5 pt-2 mt-2" id="viewPort">
     <img src="graphics/fullLogoTransparentBanner.png" class="img-fluid" alt="Band Logo">
     <div class="container-fluid p-4 border border-5" id="listWrapper">
       <div class="d-grid gap-4 col-10 mx-auto p-4">
         <div class="container-fluid" id="menuLable">
-          <h1  class="text-center">Site Navigation Options</h1>
+          <h1 class="text-center">Site Navigation Options</h1>
         </div>
-        <button onclick="document.location='all_gigs.html'" type="button" class="btn btn-secondary btn-lg">
+        <button onclick="https://kmlowe1.github.oi.gigList/all_gigs.html" type="button" class="btn btn-secondary btn-lg">
           <h3>All Performances</h3>
         </button>
-        <button onclick="document.location='all_lyrics.html'" type="button" class="btn btn-secondary btn-lg">
+        <button onclick="document.location='lyrics/all_lyrics.html'" type="button" class="btn btn-secondary btn-lg">
           <h3>All Lyrics</h3>
         </button>
         <button onclick="document.location='all_lyrics.html'" type="button" class="btn btn-secondary btn-lg">
@@ -44,7 +60,8 @@
       </div>
     </div>
   </div>
-    <footer class="footer mt-auto py-3 bg-dark">
+<!---->
+  <footer class="footer mt-auto py-3 bg-dark">
     <div class="container">
       <span class="text-muted">The Wandering Wannabees</span>
     </div>
