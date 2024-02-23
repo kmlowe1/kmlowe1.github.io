@@ -36,47 +36,56 @@
 <body id="para">
   <div class="container" id="viewPort">
     <img src="graphics/fullLogoTransparentBanner.png" class="img-fluid" alt="Band Logo">
-      <div class="container-fluid p-1 border border-2 border-info" id="listWrapper1">
-        <div class="container-fluid p-1 border border-1 border-info" id="listWrapper2">
-          <div class="d-grid gap-4 col-12 mx-auto pt-1 pb-3 ps-2 pe-2">
-            <div class="container-fluid" id="menuLable">
-              <p class="fs-2 pt-1 lh-lg text-center">Site Navigation Options</p>
-            </div>
-            <a href="https://kmlowe1.github.io/gigList/rainGig2_2_2024.html"
-              class="btn btn-secondary btn-lg border border-2 border-dark" tabindex="1" role="button"
-              aria-disabled="true">
-              <p class="fs-3 fw-bold pt-2"><i class="bi bi-music-note p-1"></i>Tonights Performance</p>
-            </a>
-            <a href="https://kmlowe1.github.io/gigList/all_gigs.html"
-              class="btn btn-secondary btn-lg border border-2 border-dark" tabindex="2" role="button"
-              aria-disabled="true">
-              <p class="fs-3 fw-bold pt-2"><i class="bi bi-music-note-beamed p-1"></i>All Performances</p>
-            </a>
-            <a href="https://kmlowe1.github.io/lyrics/all_lyrics.html" class="btn btn-secondary btn-lg" tabindex="3"
-              role="button" aria-disabled="true">
-              <p class="fs-3 fw-bold pt-2"><i class="bi bi-music-note-list p-1"></i>All Lyrics</p>
-            </a>
-            <a href="https://www.facebook.com/wanderingwannabees/" target="_blank" class="btn btn-secondary btn-lg"
-              tabindex="4" role="button" aria-disabled="true">
-              <p class="fs-3 fw-bold pt-2"><i class="bi bi-facebook p-1"></i>Visit us on Facebook</p>
-            </a>
-            <a href="https://www.youtube.com/channel/UC0j4Zqq6k9fcaLSCBa6rGBA" target="_blank"
-              class="btn btn-secondary btn-lg" tabindex="5" role="button" aria-disabled="true">
-              <p class="fs-3 fw-bold pt-2"><i class="bi bi-youtube p-1"></i>Check us out on YouTube</p>
-            </a>
-            <a href="https://kmlowe1.github.io/lyrics/all_lyrics.html" class="btn btn-secondary btn-lg" tabindex="6"
-              role="button" aria-disabled="true">
-              <p class="fs-3 fw-bold pt-2"><i class="bi bi-file-earmark-person-fill p-1"></i>About Us</p>
-            </a>
-            <a href="https://kmlowe1.github.io/lyrics/all_lyrics.html" class="btn btn-secondary btn-lg" tabindex="7"
-              role="button" aria-disabled="true">
-              <p class="fs-3 fw-bold pt-2"><i class="bi bi-telephone-inbound p-1"></i>Contact Us</p>
-            </a>
+    <div class="container-fluid p-1 border border-2 border-info" id="listWrapper1">
+      <div class="container-fluid p-1 border border-1 border-info" id="listWrapper2">
+        <div class="d-grid gap-4 col-12 mx-auto pt-1 pb-3 ps-2 pe-2" id="buttonGrid">
+          <div class="container-fluid" id="menuLable">
+            <p class="fs-2 pt-1 lh-lg text-center" id="menuText">Site Navigation Options</p>
           </div>
+          <a href="https://kmlowe1.github.io/gigList/rainGig2_2_2024.html"
+            class="btn btn-secondary btn-lg border border-2 border-dark" tabindex="1" role="button"
+            aria-disabled="true" id="currentPerformanceButton" >
+            <p class="fs-3 fw-bold pt-2"><i class="bi bi-music-note p-1"></i>Tonights Performance</p>
+          </a>
+          <a href="https://kmlowe1.github.io/gigList/all_gigs.html"
+            class="btn btn-secondary btn-lg border border-2 border-dark" tabindex="2" role="button"
+            aria-disabled="true" id="allPerformancesButton">
+            <p class="fs-3 fw-bold pt-2"><i class="bi bi-music-note-beamed p-1"></i>All Performances</p>
+          </a>
+          <a href="https://kmlowe1.github.io/lyrics/all_lyrics.html" class="btn btn-secondary btn-lg" tabindex="3"
+            role="button" aria-disabled="true" id="allLyricButton">
+            <p class="fs-3 fw-bold pt-2"><i class="bi bi-music-note-list p-1"></i>All Lyrics</p>
+          </a>
+          <a href="https://www.facebook.com/wanderingwannabees/" target="_blank" class="btn btn-secondary btn-lg"
+            tabindex="4" role="button" aria-disabled="true" id="visitUsOnFacebookButton">
+            <p class="fs-3 fw-bold pt-2"><i class="bi bi-facebook p-1"></i>Visit us on Facebook</p>
+          </a>
+          <a href="https://www.youtube.com/channel/UC0j4Zqq6k9fcaLSCBa6rGBA" target="_blank"
+            class="btn btn-secondary btn-lg" tabindex="5" role="button" aria-disabled="true" id="checkUsOutOnYouTubeButton">
+            <p class="fs-3 fw-bold pt-2"><i class="bi bi-youtube p-1"></i>Check us out on YouTube</p>
+          </a>
+          <a href="https://kmlowe1.github.io/lyrics/all_lyrics.html" class="btn btn-secondary btn-lg" tabindex="6"
+            role="button" aria-disabled="true" id="aboutUsButton">
+            <p class="fs-3 fw-bold pt-2"><i class="bi bi-file-earmark-person-fill p-1"></i>About Us</p>
+          </a>
+          <a href="https://kmlowe1.github.io/lyrics/all_lyrics.html" class="btn btn-secondary btn-lg" tabindex="7"
+            role="button" aria-disabled="true" id="contactUsButton">
+            <p class="fs-3 fw-bold pt-2"><i class="bi bi-telephone-inbound p-1"></i>Contact Us</p>
+          </a>
         </div>
       </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-      </script>
+    </div>
+    <br>
+    <br>
+  </div>
+  <footer class="footer mt-auto py-3 bg-dark">
+    <div class="container text-center">
+      <span class="text-muted"><p>Copyright <i class="bi bi-c-circle"></i> thewanderingwannabees@gmail.com</p></span>
+      <span class="text-muted">2024 Version 1.0</span>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 </html>
