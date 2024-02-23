@@ -12,8 +12,5 @@ function decreaseFontSize(id) {
      txt = document.getElementById(id);
      style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
      currentSize = parseFloat(style);
-/*      if(currentSize <= 1){
-          return;
-     } */
      txt.style.fontSize = (currentSize - changeFactor) + 'px';
 }
