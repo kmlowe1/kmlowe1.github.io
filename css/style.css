@@ -4,6 +4,12 @@
 }
 
 #para {
-    background-color: var(--primaryColor);
-    color: var(--secondaryColor);
+    background-color: var(--primaryColor) !important;
+    color: var(--secondaryColor) !important;
+}
+
+.songTitle,
+.songInfo {
+  text-decoration: underline;
+  font-style: italic;
 }

@@ -1,49 +1,75 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Popular English and Icelandic song lyrics.">
-    <meta name="author" content="Kevin Lowe">
-    <meta name="keywords"
-      content="The Wandering Wannabees, Lyric Vault, song lyrics, conver band, keflavik, iceland, music">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="css/style.css" rel="stylesheet">
-    <script src="js/javascript.js"></script>
-    <title>The Wandering Wannabees Lyrics Vault - Home</title>
-    <link rel="icon" type="image/x-icon" href="/graphics/X_Icon.png">
-  </head>
-<base href="https://kmlowe1.github.io/" target="_parent">
-<style>
 
-/*   #para {
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Popular English and Icelandic song lyrics.">
+  <meta name="author" content="Kevin Lowe">
+  <meta name="keywords"
+    content="The Wandering Wannabees, Lyric Vault, song lyrics, conver band, keflavik, iceland, music">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="../css/style.css" rel="stylesheet">
+  <script src="../js/javascript.js"></script>
+  <title>The Wandering Wannabees Lyrics Vault - Home</title>
+  <link rel="icon" type="image/x-icon" href="../graphics/X_Icon.png">
+</head>
+<!-- <base href="https://kmlowe1.github.io/" target="_parent"> -->
+<style>
+  /*     #para {
     background-color: #332D41;
     color: #E6E0E9;
     font-size: 2.5em;
     padding: 1em;
-  }
+  } */
 
-  .songTitle,
+/*   .songTitle,
   .songInfo {
     text-decoration: underline;
     font-style: italic;
   } */
-
-  
 </style>
-
 <body id="para">
+
+  <!-- New purposed implementation -->
+<!--   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Fixed navbar</a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarCollapse" style="">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav> -->
+
+  <!--Current Implementation -->
   <div class="collapse" id="navbarToggleExternalContent">
     <div class="bg-dark p-4 text-center">
-      <button onclick="document.location='index.html'" type="button" class="btn btn-secondary btn-lg p-3" tabindex="1"
-        id="homeMenuButton">
-        <i class="bi bi-house p-3"></i>
-      </button>
       <button onclick="increaseFontSize('viewPort')" type="button" class="btn btn-secondary btn-lg p-3" tabindex="2">
         <i class="bi bi-zoom-in p-3"></i>
+      </button>
+      <button onclick="document.location='../index.html'" type="button" class="btn btn-secondary btn-lg p-3"
+        tabindex="1" id="homeMenuButton">
+        <i class="bi bi-house p-3"></i>
       </button>
       <button onclick="decreaseFontSize('viewPort')" type="button" class="btn btn-secondary btn-lg p-3" tabindex="3">
         <i class="bi bi-zoom-out p-3"></i>
@@ -59,60 +85,76 @@
       </button>
     </div>
   </nav>
-  <br>
-  <h1 id="top" class="songTitle">Lady - Kenny Rogers</h1>
-  <br>
-  <h3 class="songInfo">Verse 1</h3>
-  <p>Lady, I'm your knight in shining armour and I love you</p>
-  <p>You have made me what I am and... I am yours</p>
-  <p>My love, there's so many ways I want to say I love you</p>
-  <p>Let me hold you in my arms for...ever more</p>
-  <br>
-  <h3 class="songInfo">Bridge</h3>
-  <p>You have gone and made me such a fool</p>
-  <p>I'm so lost in your love</p>
-  <p>And all...we belong together</p>
-  <p>Won't you believe in my song...</p>
-  <br>
-  <h3 class="songInfo">Verse 2</h3>
-  <p>Lady, for so many years I'd thought I'd never find you</p>
-  <p>You have come into my life and... made me whole</p>
-  <p>Forever, let me wake to see you each and every morning</p>
-  <p>Let me hear you whisper softly... in my ear</p>
-  <br>
-  <h3 class="songInfo">Bridge</h3>
-  <p>In my eyes I see no one else but you</p>
-  <p>There's no other love like our-love</p>
-  <p>And yes, oh yes I'll always want you near me</p>
-  <p>I've waited for you for so long...</p>
-  <br>
-  <h3 class="songInfo">Chorus/Outro</h3>
-  <p>Lady, your love’s the only love I need</p>
-  <p>And beside me, is where, I want you to be</p>
-  <p>’Cause my love, there is something, I want you to know</p>
-  <p>You're the love of my life...</p>
-  <p>you're my lady</p>
-  <br>
-  <h2 class="songInfo">End</h3>
+
+  <div class="container-xl p-4" id="viewPort">
+    <lead id="top" class="songTitle py-4">Lady - Kenny Rogers</lead>
+    <p class="songInfo py-3">Verse 1</p>
+    <p>Lady, I'm your knight in shining armour and I love you</p>
+    <p>You have made me what I am and... I am yours</p>
+    <p>My love, there's so many ways I want to say I love you</p>
+    <p>Let me hold you in my arms for...ever more</p>
     <br>
+    <p class="songInfo py-3">Bridge</p>
+    <p>You have gone and made me such a fool</p>
+    <p>I'm so lost in your love</p>
+    <p>And all...we belong together</p>
+    <p>Won't you believe in my song...</p>
     <br>
+    <p class="songInfo py-3">Verse 2</p>
+    <p>Lady, for so many years I'd thought I'd never find you</p>
+    <p>You have come into my life and... made me whole</p>
+    <p>Forever, let me wake to see you each and every morning</p>
+    <p>Let me hear you whisper softly... in my ear</p>
     <br>
+    <p class="songInfo py-3">Bridge</p>
+    <p>In my eyes I see no one else but you</p>
+    <p>There's no other love like our-love</p>
+    <p>And yes, oh yes I'll always want you near me</p>
+    <p>I've waited for you for so long...</p>
     <br>
-    <a href="index.html">Return to set list</a>
-    <footer class="footer mt-auto py-3 bg-dark">
-      <div class="container text-center">
-          <span class="text-muted">
-              <p>Copyright <i class="bi bi-c-circle"></i> <a class="text-muted"
-                      href="mailto:thewanderingwannabees@gmail.com">
-                      thewanderingwannabees@gmail.com</a>
-              </p>
-          </span>
-          <span class="text-muted">2024 Version 1.0</span>
-      </div>
+    <p class="songInfo py-3">Chorus/Outro</p>
+    <p>Lady, your love’s the only love I need</p>
+    <p>And beside me, is where, I want you to be</p>
+    <p>’Cause my love, there is something, I want you to know</p>
+    <p>You're the love of my life...</p>
+    <p>you're my lady</p>
+    <br>
+    <p class="songInfo py-3">End</p>
+  </div>
+  <br>
+  <div class="container-fluid text-center">
+    <!-- future implementation -->
+<!--     <button onclick="document.location='#'" type="button" class="btn btn-secondary p-3" tabindex="2"
+      id="previousPageBottomMenuButton" disabled><i class="bi bi-arrow-bar-left p-2"></i>
+    </button> -->
+    <a class="btn btn-secondary p-3" href="#top" id="returnToTopLyricsBottomMenuButton" target="_parent"
+      roll="button"><i class="bi bi-bookmarks p-2" tabindex="3"></i>
+    </a>
+    <a class="btn btn-secondary p-3" href="../gigList/rainGig2_2_2024.html" id="returnToEventPageBottomMenuButton" target="_parent"
+      roll="button"><i class="bi bi-music-note p-2" tabindex="4"></i>
+    </a>
+    <a class="btn btn-secondary p-3" href="../index.html" id="returnHomeBottomMenuButton" target="_parent"
+      roll="button" tabindex="5"><i class="bi bi-house p-2"></i>
+    </a>
+    </button>
+    <!-- future implementation -->
+<!--     <button onclick="document.location='#'" type="button" class="btn btn-secondary p-3" tabindex="6"
+      id="nextPageBottomMenuButton" disabled><i class="bi bi-arrow-bar-right p-2"></i>
+    </button> -->
+  </div>
+  <br>
+  <footer class="footer mt-auto py-3 bg-dark">
+    <div class="container text-center">
+      <span class="text-muted">
+        <p>Copyright <i class="bi bi-c-circle"></i> <a class="text-muted" href="mailto:thewanderingwannabees@gmail.com">
+            thewanderingwannabees@gmail.com</a>
+        </p>
+      </span>
+      <span class="text-muted">2024 Version 1.0</span>
+    </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-      </script>
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
-
 </html>
