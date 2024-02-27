@@ -17,53 +17,61 @@
   <title>The Wandering Wannabees Lyrics Vault - Home</title>
   <link rel="icon" type="image/x-icon" href="../graphics/X_Icon.png">
 </head>
-<!-- <base href="https://kmlowe1.github.io/" target="_parent"> -->
-<style>
-  /*     #para {
-    background-color: #332D41;
-    color: #E6E0E9;
-    font-size: 2.5em;
-    padding: 1em;
-  } */
 
-/*   .songTitle,
-  .songInfo {
-    text-decoration: underline;
-    font-style: italic;
-  } */
-</style>
 <body id="para">
 
   <!-- New purposed implementation -->
-<!--   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Fixed navbar</a>
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" 
-      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+  <nav class="navbar navbar-dark fixed-top bg-dark">
+    <div class="container-fluid justify-content-end">
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
       </button>
-      <div class="navbar-collapse collapse" id="navbarCollapse" style="">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+      <div class="navbar-collapse collapse pt-2" id="navbarCollapse">
+        <div class="bg-dark p-1 text-center">
+          <div class="row">
+            <!-- future implementation -->
+            <div class="col-2">
+              <button onclick="document.location='#'" type="button" class="btn btn-secondary" tabindex="2"
+                id="previousPageBottomMenuButton" disabled><i class="bi bi-arrow-bar-left"></i>
+              </button>
+            </div>
+            <div class="col-2">
+              <button onclick="increaseFontSize('viewPort')" type="button" class="btn btn-secondary btn" tabindex="-1"
+                id="zoomInMenuButton">
+                <i class="bi bi-zoom-in"></i>
+              </button>
+            </div>
+            <div class="col-2">
+              <button onclick="document.location='../index.html'" type="button" class="btn btn-secondary btn"
+                tabindex="-2" id="homeMenuButton">
+                <i class="bi bi-house"></i>
+              </button>
+            </div>
+            <div class="col-2">
+              <a class="btn btn-secondary" tabindex="4" href="../gigList/rainGig2_2_2024.html"
+                id="returnToEventPageMenuButton" target="_parent" roll="button"><i class="bi bi-music-note"></i>
+              </a>
+            </div>
+            <div class="col-2">
+              <button onclick="decreaseFontSize('viewPort')" type="button" class="btn btn-secondary btn" tabindex="-3"
+                id="zoomOutMenuButton">
+                <i class="bi bi-zoom-out"></i>
+              </button>
+            </div>
+            <div class="col-2">
+              <!-- future implementation -->
+              <button onclick="document.location='#'" type="button" class="btn btn-secondary" tabindex="6"
+                id="nextPageMenuButton" disabled><i class="bi bi-arrow-bar-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </nav> -->
-
-  <!--Current Implementation -->
-  <div class="collapse" id="navbarToggleExternalContent">
+  </nav>
+  <!--Old Nav bar Implementation -->
+  <!--   <div class="collapse" id="navbarToggleExternalContent">
     <div class="bg-dark p-4 text-center">
       <button onclick="increaseFontSize('viewPort')" type="button" class="btn btn-secondary btn-lg p-3" tabindex="-1">
         <i class="bi bi-zoom-in p-3"></i>
@@ -85,7 +93,11 @@
         <span class="navbar-toggler-icon"></span>
       </button>
     </div>
-  </nav>
+  </nav> -->
+  <br>
+  <br>
+  <br>
+  <br>
   <div class="container-xl p-4" id="viewPort">
     <lead id="top" class="py-4 text-decoration-underline fw-bolder fst-italic">Lady - Kenny Rogers</lead>
     <p class="py-3 text-decoration-underline fw-bolder fst-italic">Verse 1</p>
@@ -122,27 +134,27 @@
     <p class="py-3 text-decoration-underline fw-bolder fst-italic">End</p>
   </div>
   <br>
-  <div class="container-fluid text-center">
-    <!-- future implementation -->
-<!--     <button onclick="document.location='#'" type="button" class="btn btn-secondary p-3" tabindex="2"
+  <br>
+<!--   <div class="container-fluid text-center">
+     future implementation
+        <button onclick="document.location='#'" type="button" class="btn btn-secondary p-3" tabindex="2"
       id="previousPageBottomMenuButton" disabled><i class="bi bi-arrow-bar-left p-2"></i>
-    </button> -->
+    </button> 
     <a class="btn btn-secondary p-3" href="#top" id="returnToTopLyricsBottomMenuButton" target="_parent"
       roll="button"><i class="bi bi-bookmarks p-2" tabindex="3"></i>
     </a>
-    <a class="btn btn-secondary p-3" href="../gigList/rainGig2_2_2024.html" id="returnToEventPageBottomMenuButton" target="_parent"
-      roll="button"><i class="bi bi-music-note p-2" tabindex="4"></i>
+    <a class="btn btn-secondary p-3" href="../gigList/rainGig2_2_2024.html" id="returnToEventPageBottomMenuButton"
+      target="_parent" roll="button"><i class="bi bi-music-note p-2" tabindex="4"></i>
     </a>
-    <a class="btn btn-secondary p-3" href="../index.html" id="returnHomeBottomMenuButton" target="_parent"
-      roll="button" tabindex="5"><i class="bi bi-house p-2"></i>
+    <a class="btn btn-secondary p-3" href="../index.html" id="returnHomeBottomMenuButton" target="_parent" roll="button"
+      tabindex="5"><i class="bi bi-house p-2"></i>
     </a>
-    </button>
-    <!-- future implementation -->
-<!--     <button onclick="document.location='#'" type="button" class="btn btn-secondary p-3" tabindex="6"
+     future implementation -->
+    <!--     <button onclick="document.location='#'" type="button" class="btn btn-secondary p-3" tabindex="6"
       id="nextPageBottomMenuButton" disabled><i class="bi bi-arrow-bar-right p-2"></i>
-    </button> -->
-  </div>
-  <br>
+    </button>
+  </div> -->
+  
   <footer class="footer mt-auto py-3 bg-dark">
     <div class="container text-center">
       <span class="text-muted">
@@ -157,4 +169,5 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
 </body>
+
 </html>
