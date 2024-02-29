@@ -17,37 +17,92 @@
     <title>The Wandering Wannabees Lyrics Vault - Contact Us</title>
     <link rel="icon" type="image/x-icon" href="/graphics/X_Icon.png">
 </head>
+
 <body id="para">
-        <!-- Nav Bar -->
-        <nav class="navbar navbar-dark fixed-top bg-dark">
-            <div class="container-fluid justify-content-end">
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <i class="bi bi-list"></i>
-                </button>
-                <div class="navbar-collapse collapse pt-2" id="navbarCollapse">
-                    <div class="bg-dark p-1 text-center">
-                        <button onclick="increaseFontSize('viewPort')" type="button" class="btn btn-secondary btn"
-                            tabindex="-1" id="zoomInMenuButton">
-                            <i class="bi bi-zoom-in"></i>
-                        </button>
-                        <button onclick="document.location='../index.html'" type="button" class="btn btn-secondary btn"
-                            tabindex="-2" id="homeMenuButton">
-                            <i class="bi bi-house"></i>
-                        </button>
-                        <button onclick="decreaseFontSize('viewPort')" type="button" class="btn btn-secondary btn"
-                            tabindex="-3" id="zoomOutMenuButton">
-                            <i class="bi bi-zoom-out"></i>
-                        </button>
-                    </div>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-dark fixed-top bg-dark">
+        <div class="container-fluid justify-content-end">
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="navbar-collapse collapse pt-2" id="navbarCollapse">
+                <div class="bg-dark p-1 text-center">
+                    <button onclick="increaseFontSize('viewPort')" type="button" class="btn btn-secondary btn"
+                        tabindex="-1" id="zoomInMenuButton">
+                        <i class="bi bi-zoom-in"></i>
+                    </button>
+                    <button onclick="document.location='../index.html'" type="button" class="btn btn-secondary btn"
+                        tabindex="-2" id="homeMenuButton">
+                        <i class="bi bi-house"></i>
+                    </button>
+                    <button onclick="decreaseFontSize('viewPort')" type="button" class="btn btn-secondary btn"
+                        tabindex="-3" id="zoomOutMenuButton">
+                        <i class="bi bi-zoom-out"></i>
+                    </button>
                 </div>
             </div>
-        </nav>
-        <br>
-        <br>
+        </div>
+    </nav>
+    <br>
+    <br>
     <div class="container-lg" id="viewPort">
         <img src="graphics/ContactUsLogo_Transparent.png" class="img-fluid" alt="Band Logo">
+        <div class="container-xl p-4 pt-1" id="listWrapper">
+            <div class="container-lg my-1 ">
+                <div class="row">
+                    <div class="col-sm-2 col-md-2 col-lg-3 col-xl-3 col-xxl-4">
+                    </div>
+                    <div class="col-sm-8 col-md-8 col-lg-6 col-xl-6 col-xxl-4">
+                        <div class="text-light text-center">
+                            <lead class="h3 fw-bolder">Do you need some entertainment?</lead>
+                            <br>
+                            <br>
+                            <lead class="h3 fw-bolder">Looking for a full service band?</lead>
+                            <br>
+                            <br>
+                            <lead class="h3 fw-bolder">But you don't want to spend a fortune?</lead>
+                            <br>
+                            <br>
+                            <p class="h4">Then look no where else!</p>
+                        </div>
+                        <br>
+                        <div class="text-light bg-dark border border-1 border-infor p-3">
+                            <ul>
+                                <li>No matter what size venue.</li>
+                                <li>Popular Icelandic and American covers.</li>
+                                <li>60's, 70's, 80's, 90's, to present.</li>
+                                <li>We own our own new and modern sound equipment.</li>
+                                <li>Acoustically or with a drum kit.</li>
+                                <li>Professional musicians with many years of experience.</li>
+                                <li>Customize your performance!</li>
+                            </ul>
+                        </div>
+                        <br>
+                        <div class="text-center text-light">
+                            <lead class="h4 fw-bolder">Contact Us Today!</lead>
+                        </div>
+                        <div class="text-light pt-2 pb-2">
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-telephone-fill p-2"></i>783-5046</li>
+                                <li><a class="link-light" href="mailto:thewanderingwannabees@gmail.com" target="_blank"></a><i class="bi bi-envelope p-2"></i>
+                                    thewanderingwannabees@gmail.com</a></li>
+                                <li><a class="link-light" href="https://m.me/wanderingwannabees" target="_blank"></a><i class="bi bi-messenger p-2"></i>Chat with us live!</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-3 col-xl-3 col-xxl-4">
+                </div>
+
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                    crossorigin="anonymous">
+                    </script>
+            </div>
+        </div>
+    </div>
     </div>
     <footer class="footer mt-auto py-3 bg-dark">
         <div class="container text-center">
@@ -60,9 +115,6 @@
             <span class="text-muted">2024 Version 1.0</span>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        </script>
 </body>
 
 </html>
