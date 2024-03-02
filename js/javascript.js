@@ -47,3 +47,16 @@ function decreaseFontSize(id) {
      txt.style.fontSize = (currentSize - changeFactor) + 'px';
 }
 
+function toggleElementVisibility(id) {
+     var element = document.getElementById(id);
+     if (element.style.display === "none") {
+       element.style.display = "block";
+     } else {
+       element.style.display = "none";
+     }
+   }
+function setProperMenuOptions(){
+     const previousURL = document. referrer;
+     alert("Image is loaded, " + previousURL);
+}
+   
