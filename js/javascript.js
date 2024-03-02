@@ -1,4 +1,6 @@
-var changeFactor = 5;  /** Constant for increase/decrease font size factor **/
+const changeFactor = 5;  /** Constant for increase/decrease font size factor **/
+const currentPerformanceURL = "https://kmlowe1.github.io/gigList/rainGig2_2_2024.html";
+const allLyricsURL = "";
 
 const songList = ["Cant_you_See-Marshal_Tucker_Band.html",
      "One_Horse_Town-Blackberry_Smoke.html",
@@ -57,6 +59,10 @@ function toggleElementVisibility(id) {
    }
 function setProperMenuOptions(){
      const previousURL = document. referrer;
-     alert("Image is loaded, " + previousURL);
+     if(previousURL === currentPerformanceURL){
+          alert(previousURL + " is the same as " + currentPerformanceURL);
+     } else {
+          alert(previousURL + " does not match.");
+     }
 }
    
