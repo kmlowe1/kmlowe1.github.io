@@ -68,4 +68,12 @@ function setProperMenuOptions(){
           toggleElementVisibility("returnToAllLyricsPageMenuButton");
      }
 }
+
+function nextLyricPage(){
+
+}
+
+function previousLyricPage(){
+     
+}
    
