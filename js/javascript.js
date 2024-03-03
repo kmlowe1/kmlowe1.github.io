@@ -52,7 +52,7 @@ function decreaseFontSize(id) {
 function toggleElementVisibility(id) {
      var element = document.getElementById(id);
      if (element.style.display === "none") {
-       element.style.display = "block";
+       element.style.display = "inline-block";
      } else {
        element.style.display = "none";
      }
@@ -60,10 +60,12 @@ function toggleElementVisibility(id) {
 function setProperMenuOptions(){
      const previousURL = document. referrer;
      if(previousURL === currentPerformanceURL){
-          alert(previousURL + " is the same as " + currentPerformanceURL);
-          toggleElementVisibility();
-     } else {
-          alert(previousURL + " does not match.");
+          alert("Grats! Performance page menu items toggled!");
+          toggleElementVisibility("returnToEventPageMenuButton");
+     }
+     else if(previousURL === allLyricsURL){
+          alert("Grats! All Lyrics page menu items toggled!");
+          toggleElementVisibility("returnToAllLyricsPageMenuButton");
      }
 }
    
