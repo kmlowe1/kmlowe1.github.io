@@ -61,6 +61,8 @@ function setProperMenuOptions(){
      const previousURL = document. referrer;
      if(previousURL === currentPerformanceURL){
           toggleElementVisibility("returnToEventPageMenuButton");
+          toggleElementVisibility("previousPageMenuButton");
+          toggleElementVisibility("nextPageMenuButton");
      }
      else if(previousURL === allLyricsURL){
           toggleElementVisibility("returnToAllLyricsPageMenuButton");
