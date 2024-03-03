@@ -70,10 +70,10 @@ function setProperMenuOptions(){
 }
 
 function nextLyricPage(){
-
+     alert("page forward.")
 }
 
 function previousLyricPage(){
-     
+     alert("page backward.")
 }
    
