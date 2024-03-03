@@ -61,6 +61,7 @@ function setProperMenuOptions(){
      const previousURL = document. referrer;
      if(previousURL === currentPerformanceURL){
           alert(previousURL + " is the same as " + currentPerformanceURL);
+          toggleElementVisibility();
      } else {
           alert(previousURL + " does not match.");
      }
