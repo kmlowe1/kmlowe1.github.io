@@ -60,11 +60,9 @@ function toggleElementVisibility(id) {
 function setProperMenuOptions(){
      const previousURL = document. referrer;
      if(previousURL === currentPerformanceURL){
-          alert("Grats! Performance page menu items toggled!");
           toggleElementVisibility("returnToEventPageMenuButton");
      }
      else if(previousURL === allLyricsURL){
-          alert("Grats! All Lyrics page menu items toggled!");
           toggleElementVisibility("returnToAllLyricsPageMenuButton");
      }
 }
