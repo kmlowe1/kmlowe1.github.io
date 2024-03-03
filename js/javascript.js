@@ -1,6 +1,6 @@
 const changeFactor = 5;  /** Constant for increase/decrease font size factor **/
 const currentPerformanceURL = "https://kmlowe1.github.io/gigList/rainGig2_2_2024.html";
-const allLyricsURL = "";
+const allLyricsURL = "https://kmlowe1.github.io/lyrics/all_lyrics.html";
 
 const songList = ["Cant_you_See-Marshal_Tucker_Band.html",
      "One_Horse_Town-Blackberry_Smoke.html",
