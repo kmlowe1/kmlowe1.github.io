@@ -18,55 +18,63 @@
   <title>The Wandering Wannabees Lyrics Vault - Knockin On Heavens Door-Bob Dylan</title>
   <link rel="icon" type="image/x-icon" href="../graphics/X_Icon.png">
 </head>
-<body id="para">
+<body id="para" onload="setProperMenuOptions()">
   <nav class="navbar navbar-dark fixed-top bg-dark">
-    <div class="container-fluid justify-content-end">
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="bi bi-list"></i>
-      </button>
-      <div class="navbar-collapse collapse pt-2" id="navbarCollapse">
-        <div class="bg-dark p-1 text-center">
-          <div class="row">
-            <!-- future implementation -->
-            <div class="col-2">
-              <!-- <button onclick="document.location='#'" type="button" class="btn btn-secondary" tabindex="2"
-                id="previousPageBottomMenuButton" disabled><i class="bi bi-arrow-bar-left"></i>
-              </button> -->
-            </div>
-            <div class="col-2">
-              <button onclick="increaseFontSize('viewPort')" type="button" class="btn btn-secondary btn" tabindex="-1"
-                id="zoomInMenuButton">
-                <i class="bi bi-zoom-in"></i>
-              </button>
-            </div>
-            <div class="col-2">
-              <button onclick="document.location='../index.html'" type="button" class="btn btn-secondary btn"
-                tabindex="-2" id="homeMenuButton">
-                <i class="bi bi-house"></i>
-              </button>
-            </div>
-            <div class="col-2">
-              <a class="btn btn-secondary" tabindex="4" href="../gigList/rainGig2_2_2024.html"
-                id="returnToEventPageMenuButton" target="_parent" roll="button"><i class="bi bi-music-note"></i>
-              </a>
-            </div>
-            <div class="col-2">
-              <button onclick="decreaseFontSize('viewPort')" type="button" class="btn btn-secondary btn" tabindex="-3"
-                id="zoomOutMenuButton">
-                <i class="bi bi-zoom-out"></i>
-              </button>
-            </div>
-            <div class="col-2">
-              <!-- future implementation -->
-              <!-- <button onclick="document.location='#'" type="button" class="btn btn-secondary" tabindex="6"
-                id="nextPageMenuButton" disabled><i class="bi bi-arrow-bar-right"></i>
-              </button> -->
-            </div>
+      <div class="container-fluid justify-content-end">
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <i class="bi bi-list h1 fw-bolder"></i>
+          </button>
+          <div class="navbar-collapse collapse pt-2" id="navbarCollapse">
+              <div class="bg-dark p-1 text-center">
+                  <div class="row">
+                      <!-- future implementation -->
+                      <div class="col-2">
+                          <button onclick="document.location='#'" type="button" class="btn btn-secondary" tabindex="2"
+                              id="previousPageMenuButton" style="display:none"><i
+                                  class="bi bi-arrow-bar-left h2 fw-bolder"></i>
+                          </button>
+                      </div>
+                      <div class="col-2">
+                          <button onclick="increaseFontSize('viewPort')" type="button" class="btn btn-secondary btn"
+                              tabindex="-1" id="zoomInMenuButton">
+                              <i class="bi bi-zoom-in h2 fw-bolder"></i>
+                          </button>
+                      </div>
+                      <div class="col-2">
+                          <button onclick="document.location='../index.html'" type="button"
+                              class="btn btn-secondary btn" tabindex="-2" id="homeMenuButton">
+                              <i class="bi bi-house h2 fw-bolder"></i>
+                          </button>
+                      </div>
+                      <div class="col-2">
+                          <a class="btn btn-secondary" style="display:none" tabindex="4"
+                              href="../gigList/rainGig2_2_2024.html" id="returnToEventPageMenuButton" target="_parent"
+                              roll="button"><i class="bi bi-music-note h2 fw-bolder"></i>
+                          </a>
+                          <a class="btn btn-secondary" style="display:none" tabindex="4"
+                              href="../lyrics/all_lyrics.html" id="returnToAllLyricsPageMenuButton" target="_parent"
+                              roll="button"><i class="bi bi-music-note-beamed h2 fw-bolder"></i>
+                          </a>
+                      </div>
+                      <div class="col-2">
+                          <button onclick="decreaseFontSize('viewPort')" type="button" class="btn btn-secondary btn"
+                              tabindex="-3" id="zoomOutMenuButton">
+                              <i class="bi bi-zoom-out h2 fw-bolder"></i>
+                          </button>
+                      </div>
+                      <div class="col-2">
+                          <!-- future implementation -->
+                          <button onclick="document.location='#'" type="button" class="btn btn-secondary" tabindex="6"
+                              id="nextPageMenuButton" style="display:none"><i
+                                  class="bi bi-arrow-bar-right h2 fw-bolder"></i>
+                          </button>
+                      </div>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
-    </div>
   </nav>
   <br>
   <br>
