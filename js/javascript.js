@@ -61,7 +61,7 @@ function toggleElementVisibility(id) {
    }
 function setProperMenuOptions(){
      const previousURL = document. referrer;
-     if(previousURL === currentPerformanceURL || Feb_2_2024_PerformanceURL){
+     if(previousURL === currentPerformanceURL){
           toggleElementVisibility("returnToEventPageMenuButton");
           /* toggleElementVisibility("previousPageMenuButton");
           toggleElementVisibility("nextPageMenuButton"); */
