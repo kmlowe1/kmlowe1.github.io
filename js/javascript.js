@@ -1,6 +1,7 @@
 const changeFactor = 5;  /** Constant for increase/decrease font size factor **/
 const Feb_2_2024_PerformanceURL = "https://kmlowe1.github.io/gigList/rainGig2_2_2024.html";
-const currentPerformanceURL = "https://kmlowe1.github.io/gigList/rainGig8_3_2024.html";
+const March_8_2024 = "https://kmlowe1.github.io/gigList/rainGig3_8_2024.html";
+const currentPerformanceURL = "https://kmlowe1.github.io/gigList/rainGig3_29_2024.html";
 const allLyricsURL = "https://kmlowe1.github.io/lyrics/all_lyrics.html";
 
 const songList = ["Cant_you_See-Marshal_Tucker_Band.html",
