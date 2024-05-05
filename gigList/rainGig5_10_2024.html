@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<base href="https://kmlowe1.github.io/" target="_parent">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Popular English and Icelandic song lyrics.">
+    <meta name="author" content="Kevin Lowe">
+    <meta name="keywords"
+        content="The Wandering Wannabees, Lyric Vault, song lyrics, conver band, keflavik, iceland, music">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/javascript.js"></script>
+    <title>The Wandering Wannabees Lyrics Vault - Current Performance</title>
+    <link rel="icon" type="image/x-icon" href="/graphics/X_Icon.png">
+</head>
+<body id="para">
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-dark fixed-top bg-dark">
+        <div class="container-fluid justify-content-end">
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="bi bi-list h1 fw-bolder"></i>
+            </button>
+            <div class="navbar-collapse collapse pt-2" id="navbarCollapse">
+                <div class="bg-dark p-1 text-center">
+                    <button onclick="increaseFontSize('viewPort')" type="button" class="btn btn-secondary btn-lg"
+                        tabindex="-1" id="zoomInMenuButton">
+                        <i class="bi bi-zoom-in h1 fw-bolder"></i>
+                    </button>
+                    <button onclick="document.location='../index.html'" type="button" class="btn btn-secondary btn-lg"
+                        tabindex="-2" id="homeMenuButton">
+                        <i class="bi bi-house h1 fw-bolder"></i>
+                    </button>
+                    <button onclick="decreaseFontSize('viewPort')" type="button" class="btn btn-secondary btn-lg"
+                        tabindex="-3" id="zoomOutMenuButton">
+                        <i class="bi bi-zoom-out h1 fw-bolder"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Event Banner -->
+    <div class="container-xl" id="viewPort">
+        <img src="https://kmlowe1.github.io/graphics/websiteRainLiteEventBanner.png"
+            class="img-fluid rounded mx-auto d-block" alt="eventImageBanner">
+        <!-- Performance Details Card -->
+        <div class="container-xl p-4 pt-1" id="listWrapper">
+            <div class="container-lg my-1 ">
+                <div class="row">
+                    <div class="col-sm-2 col-md-2 col-lg-3 col-xl-3 col-xxl-4">
+                    </div>
+                    <div class="col-sm-8 col-md-8 col-lg-6 col-xl-6 col-xxl-4 border border-1 border-info ps-0 pe-0">
+                        <div class="bg-dark text-light">
+                            <!-- Button to trigger the expanding and collapsing of the Performance Details Card-->
+                            <button class="btn btn-dark col-12" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#performanceDetails" aria-expanded="false"
+                                aria-controls="performanceDetails">
+                                <p class="fs-3 px-2 py-0 my-0 text-center text-decoration-underline fw-bolder"
+                                    id="performanceDetailTitle">Performance Details</p>
+                            </button>
+                            <!-- Collapsing Div -->
+                            <div class="collapse" id="performanceDetails">
+                                <div class="row">
+                                    <div class="col-sm-0 col-md-1 col-lg-2"></div>
+                                    <div class="col-sm-3 col-md-3 col-lg-3 ps-0">
+                                        <p class="fs-6 ps-4 py-1 my-1 text-decoration-underline"><i
+                                                class="bi bi-geo-alt-fill p-1"></i>Location: </p>
+                                    </div>
+                                    <div class="col-sm-9 col-md-7 col-lg-6">
+                                        <p class="fs-6 ps-4 py-1 my-1"><em>Ráin, Hafnargatu 19 · 230 Reykjanesbær</em>
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-0 col-md-1 col-lg-2"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-0 col-md-1 col-lg-2"></div>
+                                    <div class="col-sm-3 col-md-3 col-lg-3 ps-0 text-right">
+                                        <p class="fs-6 ps-4 py-1 my-1 text-decoration-underline"><i
+                                                class="bi bi-calendar-check-fill p-1"></i>When:
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-9 col-md-7 col-lg-6">
+                                        <p class="fs-6 ps-4 py-1 my-1 "><em>Friday, April 5th, 2024 from
+                                                23:30-Closing</em></p>
+                                    </div>
+                                    <div class="col-sm-0 col-md-1 col-lg-2"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-0 col-md-1 col-lg-2"></div>
+                                    <div class="col-sm-3 col-md-3 col-lg-3 ps-0">
+                                        <p class="fs-6 ps-4 py-1 my-1 text-decoration-underline"><i
+                                                class="bi bi-info-square-fill p-1"></i>Details:
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-9 col-md-7 col-lg-6">
+                                        <p class="fs-6 ps-4 py-1 my-1"><em>The Wandering Wannabees (lite) will be
+                                                playing a
+                                                mix of Icelandic and American rock and country acoustically. <u><b>No
+                                                        cover charge.</b></u></em></p>
+                                    </div>
+                                    <div class="col-sm-0 col-md-1 col-lg-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 col-md-2 col-lg-3 col-xl-3 col-xxl-4">
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid text-center pt-4 pb-3">
+                    <lead class="p-4 text-decoration-underline fw-bolder">Tonights Set List</lead>
+                </div>
+                <div class="container-lg">
+                    <div class="row">
+                        <div class="col-sm-2 col-md-2 col-lg-3 col-xl-3 col-xxl-4">
+                        </div>
+                        <div class="col-sm-8 col-md-8 col-lg-6 col-xl-6 col-xxl-4 ps-0 pe-0">
+                            <ul class="list-unstyled">
+
+                                <!--Set One-->
+                                <li class="py-2"><a class="link-light" href="lyrics/Free_Falling-Tom_Petty.html"><i
+                                            class="bi bi-file-music p-2"></i>Free Falling - Tom Petty</a></li>
+                                <li class="py-2"><a class="link-light" href="lyrics/Hjalpaðu_Mer_Upp-Ny_Donsk.html"><i
+                                            class="bi bi-file-music p-2"></i>Hjalpaðu Mer upp - Ny Donsk</a></li>
+                                <li class="py-2"><a class="link-light" href="lyrics/Afgan-Bubbi_Mothens.html"><i
+                                            class="bi bi-file-music p-2"></i>Afgan - Bubbi Morthens</a></li>
+                                <li class="py-2"><a class="link-light" href="lyrics/Fram_á_Nótt-Björn_Jörundur_Friðbjörnsson.html"><i
+                                            class="bi bi-file-music p-2"></i>Fram á Nótt - Björn Jörundur Friðbjörnsson</a></li>
+                                <li class="py-2"><a class="link-light" href="lyrics/Let_Her_Go-Passenger.html"><i
+                                            class="bi bi-file-music p-2"></i>Let Her Go - Passenger</a></li>
+                                <li class="py-2"><a class="link-light" href="lyrics/Í_Síðasta_Skipti-Friðrik_Dór.html"><i
+                                            class="bi bi-file-music p-2"></i>Í Síðasta Skipti - Friðrik Dór</a></li>
+                                <li class="py-2"><a class="link-light" href="lyrics/Nothing_Compares_2_U-Sinéad_O_Connor.html"><i
+                                            class="bi bi-file-music p-2"></i>Nothing Compares 2 U - Sinéad O'Connor</a></li>
+                                <li class="py-2"><a class="link-light" href="lyrics/Stál_Og_Hnífur-Bubbi_Morthens.html"><i
+                                            class="bi bi-file-music p-2"></i>Stál Og Hnífur - Bubbi Morthens</a></li>
+                                <li class="py-2"><a class="link-light" href="lyrics/Rómeó_og_Júlía-Bubbi_Morthens.html"><i
+                                            class="bi bi-file-music p-2"></i>Rómeó og Júlía - Bubbi Morthens</a></li>
+
+                                <!-- Break One-->
+                                <li class="bg-dark p-3">
+                                    <Lead class="fw-bolder"><i class="bi bi-cup-hot p-2"></i>Break</Lead></li>
+
+                                <!--Set two-->
+                                <li class="py-2"><a class="link-light" href="lyrics/In_The_Air_Tonight-Phil_Collins.html"><i
+                                            class="bi bi-file-music p-2"></i>In The Air Tonight - Phil Collins</a></li>
+                                <li class="py-2"><a class="link-light" href="lyrics\Living_Next_Door_To_Alice-Smokie.html"><i
+                                            class="bi bi-file-music p-2"></i>Living Next Door To Alice - Smokie</a></li>
+                                <li class="py-2"><a class="link-light" href="lyrics/White_Flag-Dido.html"><i
+                                            class="bi bi-file-music p-2"></i>White Flag-Dido</a></li>
+                                <li class="py-2"><a class="link-light" href="lyrics/Farin-Einar_Barðarson.html"><i
+                                            class="bi bi-file-music p-2"></i>Farin - Einar Bárðarson</a></li>
+                                <li class="py-2"><a class="link-light" href="lyrics/Vegbúinn-Elín_Ey.html"><i
+                                            class="bi bi-file-music p-2"></i>Vegbúinn - Elín Ey</a></li>
+                                <li class="py-2"><a class="link-light" href="lyrics/Picture-Kid_Rock_&_Sheryl_Crow.html"><i
+                                            class="bi bi-file-music p-2"></i>Picture - Kid Rock & Sheryl Crow</a></li>
+                                <li class="py-2"><a class="link-light" href="lyrics/The_Story-Brandi_Carlile.html"><i
+                                            class="bi bi-file-music p-2"></i>The Story - Brandi Carlile</a></li>
+                                <li class="py-2"><a class="link-light" href="lyrics/Flowers-Miley_Cyrus.html"><i
+                                            class="bi bi-file-music p-2"></i>Flowers - Miley Cyrus</a></li>
+                                <li class="py-2"><a class="link-light" href="lyrics/Peaceful_Easy_Feeling-Eagles.html"><i
+                                            class="bi bi-file-music p-2"></i>Peaceful Easy Feeling - Eagles</a></li>
+                                <li class="py-2"><a class="link-light" href="lyrics/Wish_You_Where_Here-Pink_Floyd.html"><i
+                                            class="bi bi-file-music p-2"></i>Wish You Where Here - Pink Floyd</a></li>
+                                
+                                <!-- Break Two -->
+                                <li class="bg-dark p-3">
+                                    <Lead class="fw-bolder"><i class="bi bi-cup-hot p-2"></i>Break</Lead></li>
+                                
+                                <!--Set Three-->
+                                <li class="py-2"><a class="link-light" href="lyrics/Dont_Let_The_Sun_Go_Down_On_Me-Elton_John.html"><i
+                                        class="bi bi-file-music p-2"></i>Don't Let The Sun Go Down On Me - Elton John</a></li>
+                                <li class="py-2"><a class="link-light" href="lyrics/Shallow-Lady_Gaga.html"><i
+                                        class="bi bi-file-music p-2"></i>Shallow - Lady Gaga</a></li>
+                                <li class="py-2"><a class="link-light" href="lyrics/Long_As_I_Can_See_The_Light-CCR.html"><i
+                                        class="bi bi-file-music p-2"></i>Long As I Can See the Light - CCR</a></li>
+                                <li class="py-2"><a class="link-light" href="lyrics/Zombie-The_Crandberries.html"><i
+                                        class="bi bi-file-music p-2"></i>Zombie - The Crandberries</a></li>
+                                <li class="py-2"><a class="link-light" href="lyrics/Breakfast_At_Tiffanys-Deep_Blue_Something.html"><i
+                                        class="bi bi-file-music p-2"></i>Breakfast At Tiffany's - Deep Blue Something</a></li>
+                                <li class="py-2"><a class="link-light" href="lyrics/Á_Þig-Á_Móti_Sól.html"><i
+                                        class="bi bi-file-music p-2"></i>Á Þig - Á Móti Sól</a></li>
+                                <li class="py-2"><a class="link-light" href="lyrics/Creep-Radiohead.html"><i
+                                        class="bi bi-file-music p-2"></i>Creep - Radiohead</a></li>
+                                <li class="py-2"><a class="link-light" href="lyrics/Ástin_Á_Sér_Stað-Sverrir_Bergmann.html"><i
+                                        class="bi bi-file-music p-2"></i>Ástin Á Sér Stað - Sverrir Bergmann, Friðrik Dór, Albatross</a></li>
+                                <li class="py-2"><a class="link-light" href="lyrics/Þar_Sem_Hjartað_Slær-Halldór_Gunnar.html"><i
+                                        class="bi bi-file-music p-2"></i>Þar Sem Hjartað Slær - Halldór Gunnar</a></li>
+                                <li class="py-2"><a class="link-light" href="lyrics/Closing_Time-Semisonic.html"><i
+                                        class="bi bi-file-music p-2"></i>Closing Time - Semisonic</a></li>
+    
+
+                                <!-- Extras -->
+<!--                                 <li class="bg-dark p-3">
+                                    <Lead class="fw-bolder"><i class="bi bi-cup-hot p-2"></i>Extras</Lead></li>
+                                <li class="py-2"><a class="link-light" href="lyrics\Log_Og_Regla-Bubbi_Morthens.html"><i
+                                        class="bi bi-file-music p-2"></i>Lög Og Regla - Bubbi Morthens</a></li>
+                                <li class="py-2"><a class="link-light" href="lyrics/Closing_Time-Semisonic.html"><i
+                                        class="bi bi-file-music p-2"></i>Closing Time - Semisonic</a></li>
+ -->                                
+                                <!-- End -->
+                                <li class="bg-dark p-3">
+                                    <Lead class="fw-bolder"><i class="bi bi-check-square p-2"></i>End</Lead>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2 col-md-2 col-lg-3 col-xl-3 col-xxl-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container text-center">
+            <span class="text-muted">
+                <p>Copyright <i class="bi bi-c-circle"></i> <a class="text-muted"
+                        href="mailto:thewanderingwannabees@gmail.com">
+                        thewanderingwannabees@gmail.com</a>
+                </p>
+            </span>
+            <span class="text-muted">2024 Version 1.0</span>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
